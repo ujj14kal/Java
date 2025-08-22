@@ -56,3 +56,19 @@ class Main {
 
     }
 }
+
+
+//Type promotion
+
+class typepra
+{
+    public static void main (String arg[]){
+        int x=20;
+        byte b = 30;
+        byte c = (byte)(x+b); //IN RANGE OF BYTE
+        byte d = (byte)(b+120); //OUT OF RANGE OF BYTE
+        System.out.println("Value of c: " + c);
+        System.out.println("Value of d is:"+d);
+        }
+}
+
