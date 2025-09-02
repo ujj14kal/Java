@@ -58,7 +58,7 @@ class Main {
 }
 
 
-//Type promotion
+//Type promotion  
 
 class typepra
 {
@@ -71,4 +71,63 @@ class typepra
         System.out.println("Value of d is:"+d);
         }
 }
+
+
+
+
+// CALLING FUNCTION WITHOUT CREATING OBJECT
+
+
+
+public class Main {
+    static int logic(int x, int y) {
+        int z;
+        
+        if(x>y){
+            z=x+y;
+        }
+        else {
+            z= (x+y)*5;
+        }
+        System.out.println(z);
+     return z;
+    }
+    
+public static void main (String args[]) {
+    int a = 5;
+    int b = 7;
+    int c = logic(a,b);
+}
+}
+
+
+
+// CALLING FUNCTION CREATING OBJECT
+
+
+
+public class Main {
+    public int logic(int x, int y) {
+        int z;
+        
+        if(x>y){
+            z=x+y;
+        }
+        else {
+            z= (x+y)*5;
+        }
+        System.out.println(z);
+     return z;
+    }
+    
+public static void main (String args[]) {
+    int a = 5;
+    int b = 7;
+    Main s1 = new Main();
+    
+    int c = s1.logic(a,b);
+}
+}
+
+
 
