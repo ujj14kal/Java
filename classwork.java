@@ -131,3 +131,26 @@ public static void main (String args[]) {
 
 
 
+
+//ACCESS SPECIFIERS
+
+class New {
+    private int id=56;
+    private String name="Aarush";
+    
+    public String getName () {
+        return name;
+    }
+}
+
+class Main {
+    public static void main (String args[]){
+
+    New s1 = new New ();
+    System.out.println(s1.getName ());
+    }
+    
+}
+
+
+
