@@ -196,3 +196,124 @@ class Main {
     }
 }
 
+
+//STRINGS IN JAVA
+
+
+
+//Strings Are IMMUTABLE
+class Main 
+
+{   public static void main (String args[]){
+    String s="Sachin";
+    s=s.concat(" Tendulkar");
+    System.out.println(s);}
+}
+
+
+
+//Same reference for multiple strings
+
+class Main 
+{
+    public static void main (String args[]) {
+        String s1="hi"; 
+//For these both s1 and s2 point to same area in heap memory
+        String s2="hi";
+        
+        String s3="hello";
+        
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+    }
+}
+
+
+//COMPARING STRINGS
+
+class Main 
+{
+    public static void main (String args[]){
+        String s1="Hello";
+        String s2="hello";
+        
+        System.out.println(s1.equals(s2));  //CaseSensitive Comparison
+        System.out.println(s1.equalsIgnoreCase(s2));  // Not CaseSensitive
+    }
+}
+
+
+class Main 
+{
+    public static void main (String args[]){
+        String s1="Hello";
+        String s2="hello";
+        
+        System.out.println(s1.compareTo(s2)); //Prints positve if greater, negative if smaller, 0 if equal.
+        
+    }
+}
+
+
+
+//2-D ARRAY
+
+
+class Main 
+{
+    public static void main (String args[]){
+    int [][] marks = new int [2][3];
+    
+    marks[0][0]=12;
+    marks[0][1]=13;
+    marks[0][2]=14;
+    marks[1][0]=15;
+    marks[1][1]=16;
+    marks[1][2]=34;
+    
+    
+    
+    for (int i=0;i<marks.length;i++){
+        for(int j=0;j<marks[i].length;j++){
+            System.out.print(marks[i][j]+" ");
+        }
+        System.out.println("\n");
+    }
+        
+    }
+    
+}
+
+
+
+
+//ARRAY OF OBJECTS
+class Main 
+{
+    public static void main (String args[])
+    {
+        Student [] deets = new Student[3];
+        
+        deets[0]=new Student("Alice",234);
+        deets[1]=new Student("Rohit",143);
+        deets[2]=new Student("Mohit",345);
+        
+        for(int i=0;i<deets.length;i++){
+            System.out.println("Name: "+deets[i].name+" "+"\nRoll No: "+deets[i].rollno );
+            System.out.println("\n");
+        }
+        
+    }
+}
+
+class Student 
+{
+    int rollno;
+    String name;
+
+
+Student (String name, int rollno) {
+    this.name=name;
+    this.rollno=rollno;}
+}
