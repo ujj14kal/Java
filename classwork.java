@@ -154,3 +154,45 @@ class Main {
 
 
 
+//SINGLETON CLASS
+
+
+class Student 
+{
+    private String name;
+    private static int count = 0;   
+    private static Student instance = null;  
+
+    
+    private Student() {
+        count++;
+    }
+
+    
+    private Student(String n) {
+        name = n;
+        count++;
+    }
+
+    
+    public static Student getInstance() {
+        if (instance == null) {
+            instance = new Student();   
+        }
+        System.out.println("Objects created so far: " + count);
+        return instance;
+    }
+}
+
+
+class Main {
+    public static void main(String[] args) {
+        
+        Student s1 = Student.getInstance();
+        Student s2 = Student.getInstance();
+        Student s3 = Student.getInstance();
+        Student s4 = Student.getInstance();
+        Student s5 = Student.getInstance();
+    }
+}
+
