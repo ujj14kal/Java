@@ -317,3 +317,92 @@ Student (String name, int rollno) {
     this.name=name;
     this.rollno=rollno;}
 }
+
+
+
+
+
+//ALL IMPORT FUNCTIONS
+
+import java.util.Scanner;
+
+public class InputExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // int input
+        System.out.print("Enter an integer: ");
+        int num = sc.nextInt();
+
+        // double input
+        System.out.print("Enter a double: ");
+        double d = sc.nextDouble();
+
+        // float input
+        System.out.print("Enter a float: ");
+        float f = sc.nextFloat();
+
+        // long input
+        System.out.print("Enter a long: ");
+        long l = sc.nextLong();
+
+        // boolean input
+        System.out.print("Enter true/false: ");
+        boolean b = sc.nextBoolean();
+
+        // consume leftover newline before reading String line
+        sc.nextLine();
+
+        // String input (one word)
+        System.out.print("Enter a word: ");
+        String s1 = sc.next();
+
+        // consume leftover newline before reading String line
+        sc.nextLine();
+
+        // String input (whole line)
+        System.out.print("Enter a sentence: ");
+        String s2 = sc.nextLine();
+
+        // Print all inputs to check
+        System.out.println("\nYou entered:");
+        System.out.println("Integer: " + num);
+        System.out.println("Double: " + d);
+        System.out.println("Float: " + f);
+        System.out.println("Long: " + l);
+        System.out.println("Boolean: " + b);
+        System.out.println("Word: " + s1);
+        System.out.println("Sentence: " + s2);
+
+        sc.close(); // close Scanner
+    }
+}
+
+
+
+//INPUT OUTPUT USING ARRAYS
+
+
+import java.util.Scanner;
+
+class Main 
+{
+    public static void main (String args[]){
+        
+        Scanner sc = new Scanner(System.in);
+    int [] arr = new int[5];
+    
+    for(int i=0;i<5;i++) {
+        System.out.print("Enter "+(i+1)+" Number:" );
+        arr[i]=sc.nextInt();
+    }
+    System.out.println("Array: ");
+    
+    for(int i=0;i<5;i++){
+        System.out.print(arr[i]+" ");
+    }
+    }
+}
+
+
+
